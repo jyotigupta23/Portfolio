@@ -6,6 +6,43 @@ html,body{
   font-family: 'Poppins',sans-serif;
   color:#222;
 }
+
+.download-btn{
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  
+}
+
+/*Zoom*/
+
+  .zoom {      
+  -webkit-transition: all 0.35s ease-in-out;    
+  -moz-transition: all 0.35s ease-in-out;    
+  transition: all 0.35s ease-in-out;     
+  cursor: -webkit-zoom-in;      
+  cursor: -moz-zoom-in;      
+  cursor: zoom-in;  
+  }     
+  
+  .zoom:hover,  
+  .zoom:active,   
+  .zoom:focus {
+  /**adjust scale to desired size, 
+  add browser prefixes**/
+  -ms-transform: scale(2.5);    
+  -moz-transform: scale(2.5);  
+  -webkit-transform: scale(2.5);  
+  -o-transform: scale(2.5);  
+  transform: scale(2.5);    
+  position:relative;      
+  z-index:100;  
+  }
+
+
 /*Nav Bar*/
 .navbar{
 padding: .2rem; /*--1 rem or em is equal to 16px--*/
@@ -33,6 +70,10 @@ font-size: 500%;
 text-transform: uppercase;
 text-shadow: 1px 1px 15px rgb(247, 246, 246);
 }
+.carousel-caption p{
+  font-size: 200%;
+  text-shadow: 1px 1px 15px rgb(247, 246, 246);
+  }
 
 .image-container{
   width: 200px;
@@ -227,10 +268,6 @@ section {
   font-style: normal;
 }
 
-.skills .progress-bar-wrap {
-  background: #dce8f8;
-}
-
 .skills .progress-bar {
   width: 1px;
   height: 10px;
@@ -319,8 +356,11 @@ hr.light-100{
   margin-top: .8rem;
   margin-bottom: 1rem;
 }
-footer a{
-  color: #d5d5d5;
+footer  p{
+  color: white;
+}
+footer h1{
+  color: wheat;
 }
 /*---Media Queries --*/
 @media (max-width: 992px) {
